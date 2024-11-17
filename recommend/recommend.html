@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property Recommendation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Thanh điều hướng -->
+    <nav>
+        <ul>
+            <li><a href="C:/Users/NguyenVanChi/Documents/Code/Web_Ban_hang/home/home.html" class="active">Home</a></li>
+            <li><a href="C:/Users/NguyenVanChi/Documents/Code/Web_Ban_hang/about/about.html">About</a></li>
+            <li><a href="C:/Users/NguyenVanChi/Documents/Code/Web_Ban_hang/contact/contact.html">Contact</a></li>
+            <li><a href="C:/Users/NguyenVanChi/Documents/Code/Web_Ban_hang/recommend/recommend.html">Get Recommendations</a></li>
+        </ul>
+    </nav>
+
+    <!-- Nội dung chính -->
+    <div class="container">
+        <h1>Thông tin tìm kiếm</h1>
+        <form id="recommendation-form">
+            <div class="form-group">
+                <label for="property-type">Loại hình bất động sản</label>
+                <select id="property-type" required>
+                    <option>Căn hộ chung cư</option>
+                    <option>Nhà phố</option>
+                    <option>Đất nền</option>
+                    <option>Bất động sản nghỉ dưỡng</option>
+                    <option>Hoa viên nghĩa trang</option>
+                    <option>Nhà phố thương mại</option>
+                    <option>Phòng trọ cho thuê</option>
+                    <option>Đầu tư nhà xưởng</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="area">Diện tích (m²):</label>
+                <input type="number" id="area" placeholder="e.g., 2000" required>
+            </div>
+
+            <div class="form-group">
+                <label for="location">Vị trí:</label>
+                <input type="text" id="location" placeholder="e.g., Hòa Khánh" required>
+            </div>
+            
+            <button type="submit">Nhận đề xuất</button>
+        </form>
+
+        <div id="recommendations" class="hidden">
+            <h2>Recommended Properties</h2>
+            <ul id="recommendation-list"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

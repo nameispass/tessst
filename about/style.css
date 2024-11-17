@@ -1,0 +1,81 @@
+/* Toàn bộ trang */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    /* background-image: url('team3.jpg'); */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Để thanh điều hướng ở trên và nội dung bên dưới */
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Thanh điều hướng */
+nav {
+    background-color: #007BFF;
+    padding: 10px 0;
+    width: 100%; /* Để thanh điều hướng chiếm toàn bộ chiều ngang */
+    position: sticky; /* Giữ thanh cố định khi cuộn */
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+    /* display: inline; */
+}
+
+nav ul li a {
+    /* color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block; */
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease; 
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    /* background-color: #575757;
+    border-radius: 4px; */
+    background-color: #0056b3;
+    color: #fff;
+}
+
+/* Nội dung */
+.content {
+    padding: 20px;
+    text-align: center;
+}
+.image-container {
+    display: flex;
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    height: 400px; /* Đặt chiều cao của phần tử container */
+}
+
+h1 {
+    color: #333;
+}
+
+p {
+    color: #666;
+}
