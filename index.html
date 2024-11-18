@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Đăng Nhập</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Form Đăng Nhập -->
+    <div class="container" id="loginForm">
+        <h2>Đăng Nhập</h2>
+        <input type="text" placeholder="Số điện thoại/Email" id="loginEmail" required>
+        <input type="password" placeholder="Mật khẩu" id="loginPassword" required>
+        <button onclick="login()">Đăng Nhập</button>
+        <!-- Hiển thị thông báo lỗi nếu đăng nhập sai -->
+        <p id="loginError" style="color: red; font-size: 12px;"></p>
+        <div class="options">
+            <a href="#" onclick="showForgotPassword()">Quên mật khẩu?</a>
+            <a href="#" onclick="showRegister()">Đăng ký tài khoản mới</a>
+        </div>
+    </div>
+
+    <!-- Form Quên Mật Khẩu -->
+    <div class="container" id="forgotPasswordForm" style="display: none;">
+        <h2>Quên Mật Khẩu</h2>
+        <input type="text" placeholder="Số điện thoại/Email" id="forgotEmail" required>
+        <button onclick="sendCode()">Gửi Mã</button>
+        <p id="forgotPass" style="color: red; font-size: 12px;"></p>
+        <a href="#" onclick="showLogin()">Quay lại đăng nhập</a>
+    </div>
+
+    <!-- Form Đăng Ký -->
+    <div class="container" id="registerForm" style="display: none;">
+        <h2>Đăng Ký</h2>
+        <input type="text" placeholder="Số điện thoại" id="registerPhone" required>
+        <input type="email" placeholder="Email" id="registerEmail" required>
+        <input type="text" placeholder="Họ tên" id="registerFullName" required>
+        <input type="text" placeholder="Username" id="registerUsername" required>
+        <input type="password" placeholder="Mật khẩu" id="registerPassword" required>
+        <input type="password" placeholder="Xác nhận mật khẩu" id="confirmPassword" required>
+        <button onclick="register()">Đăng Ký</button>
+        <a href="#" onclick="showLogin()">Quay lại đăng nhập</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
