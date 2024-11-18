@@ -33,7 +33,7 @@ function login() {
         if (email === validEmail && password === validPassword) {
             //alert(`Đang đăng nhập với: ${email}`);
             // Chuyển hướng sang trang "buy.html"
-            window.location.href = 'https://github.com/nameispass/tessst/blob/main/home/home.html';
+            window.location.href = 'home/home.html';
         } else {
             // Hiển thị thông báo lỗi
             document.getElementById("loginError").innerText = "Sai email hoặc mật khẩu. Vui lòng thử lại!";
