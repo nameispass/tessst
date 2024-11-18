@@ -27,8 +27,8 @@ function login() {
     // Kiểm tra nếu thông tin hợp lệ (ở đây bạn có thể thêm logic xác thực thông tin)
     if (email && password) {
         // Kiểm tra thông tin đăng nhập (giả định bạn có 1 danh sách thông tin đăng nhập hợp lệ)
-        const validEmail = "user@example.com"; // ví dụ email hợp lệ
-        const validPassword = "password123"; // ví dụ mật khẩu hợp lệ
+        const validEmail = "email"; // ví dụ email hợp lệ
+        const validPassword = "123"; // ví dụ mật khẩu hợp lệ
 
         if (email === validEmail && password === validPassword) {
             //alert(`Đang đăng nhập với: ${email}`);
